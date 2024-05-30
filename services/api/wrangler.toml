@@ -1,0 +1,22 @@
+name = "expo-hono-monorepo-example-api"
+compatibility_date = "2023-12-01"
+account_id = "xxx"
+
+# [vars]
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "expo-hono-monorepo-example-db-prod"
+database_id = "xxx"
+
+# [ai]
+# binding = "AI"

@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "types": "./src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts --persist-to=./localdb",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "generate": "drizzle-kit generate:sqlite --out migrations --schema=src/schema.ts",
+    "up": "drizzle-kit up:sqlite --schema=src/schema.ts",
+    "migrate:local": "wrangler d1 migrations apply expo-hono-monorepo-example-db-prod --local --persist-to=./localdb"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "0.2.1",
+    "hono": "4.4.0",
+    "zod": "3.23.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240403.0",
+    "better-sqlite3": "^9.5.0",
+    "drizzle-kit": "^0.20.17",
+    "drizzle-orm": "^0.30.9",
+    "wrangler": "^3.47.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "expo-hono-monorepo-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "services/*"
+  ],
+  "scripts": {},
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "npm": "please use yarn instead",
+    "pnpm": "please use yarn instead",
+    "node": "20.10.0"
+  }
+}
