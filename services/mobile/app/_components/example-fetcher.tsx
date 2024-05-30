@@ -13,7 +13,7 @@ export const ExampleFetcher = () => {
         const data = await response.json()
         setData(data)
       } catch (err) {
-        console.log(err)
+        console.log(err) // [TypeError: Network request failed]
         setData('error')
       }
     }
